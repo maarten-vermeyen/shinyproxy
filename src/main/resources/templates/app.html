@@ -12,14 +12,11 @@
 		th:src="@{/webjars/jquery/2.2.2/jquery.min.js}"></script>
 </head>
 <body>
-	<!-- navigation bar -->
-	<div th:replace="../fragments/navbar :: navbar"></div>
-	
 	<!-- content -->
-    <iframe id="shinyframe" th:src="${container}" width="100%" style="margin-top: 50px; border: 0px;"></iframe>
+    <iframe id="shinyframe" th:src="${container}" width="100%" style="margin-top: 0px; border: 0px;"></iframe>
 	<script type="text/javascript" th:inline="javascript"> 
 		function setShinyframeHeight(){
-                    $('#shinyframe').css('height', ($(window).height()-50)+'px');
+                    $('#shinyframe').css('height', ($(window).height()-5)+'px');
                 }
                 window.addEventListener("load", setShinyframeHeight);
                 window.addEventListener("resize",  setShinyframeHeight);		
