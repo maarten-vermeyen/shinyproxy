@@ -123,6 +123,20 @@
     		<artifactId>monetdb-jdbc</artifactId>
     		<version>2.24</version>
     	</dependency>
+
+
+        <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-spring-boot-adapter</artifactId>
+                <version>3.0.0.Final</version>
+        </dependency>
+        <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-tomcat8-adapter</artifactId>
+                <version>3.0.0.Final</version>
+        </dependency>
+
+
 	</dependencies>
 	
 	<build>
