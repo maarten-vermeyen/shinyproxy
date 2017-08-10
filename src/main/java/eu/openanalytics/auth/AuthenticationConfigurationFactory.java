@@ -98,7 +98,9 @@ public class AuthenticationConfigurationFactory {
 		CNLdapAuthoritiesPopulator authoritiesPopulator = new CNLdapAuthoritiesPopulator(
 				contextSource,
 				environment.getProperty("shiny.proxy.ldap.group-search-base", ""));
+		authoritiesPopulator.setSearchSubtree(true);
 		authoritiesPopulator.setGroupRoleAttribute("cn");
+ 
 		authoritiesPopulator.setGroupSearchFilter(environment.getProperty("shiny.proxy.ldap.group-search-filter", "(uniqueMember={0})"));
 
 		auth
